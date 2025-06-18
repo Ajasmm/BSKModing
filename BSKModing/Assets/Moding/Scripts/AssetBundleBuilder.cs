@@ -1,0 +1,32 @@
+#if UNITY_EDITOR
+using UnityEngine;
+using UnityEditor;
+using System.IO;
+
+
+public static class AssetBundleBuilder
+{
+    [MenuItem("Moding/AndroidBuild")]
+    public static void AndroidBuild()
+    {
+        Build(BuildTarget.Android);
+    }
+    [MenuItem("Moding/WindowsBuild")]
+    public static void WindowsBuild()
+    {
+        Build(BuildTarget.StandaloneWindows64);
+    }
+
+
+    private static void Build(BuildTarget buildTarget)
+    {
+        string assetBundleDirectory = "Assets/AssetBundles";
+        if(!Directory.Exists(assetBundleDirectory))
+            Directory.CreateDirectory(assetBundleDirectory);
+
+        BuildPipeline.BuildAssetBundles(assetBundleDirectory,
+                                        BuildAssetBundleOptions.None,
+                                        buildTarget);
+    }
+}
+#endif
