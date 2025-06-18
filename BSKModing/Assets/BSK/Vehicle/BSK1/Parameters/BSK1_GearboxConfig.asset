@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2efd839bde7c814ca2dd92b13df5175, type: 3}
+  m_Name: BSK1_GearboxConfig
+  m_EditorClassIdentifier: 
+  finalRatio: 4
+  reverceGear: 4
+  ratios:
+  - ratio: 4
+    gearDownSpeed: 0
+    gearUpSpeed: 18.024887
+  - ratio: 2.9333339
+    gearDownSpeed: 16.38626
+    gearUpSpeed: 24.579391
+  - ratio: 2.1511114
+    gearDownSpeed: 22.3449
+    gearUpSpeed: 33.517353
+  - ratio: 1.5774816
+    gearDownSpeed: 30.47032
+    gearUpSpeed: 45.705475
+  - ratio: 1.1568199
+    gearDownSpeed: 41.550434
+    gearUpSpeed: 62.325653
+  - ratio: 0.8483346
+    gearDownSpeed: 56.659683
+    gearUpSpeed: 84.98952
+  wheelRadius_Editor: 0.51
+  gearUpRPM_Editor: 1500
+  gearDownRPM_Editor: 1000
+  targetRPMOnGearUP_Editor: 1100
