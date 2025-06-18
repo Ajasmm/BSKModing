@@ -14,7 +14,7 @@ public static class AssetBundleBuilder
     [MenuItem("Moding/WindowsBuild")]
     public static void WindowsBuild()
     {
-        Build(BuildTarget.StandaloneWindows64);
+        Build(BuildTarget.StandaloneWindows);
     }
 
 

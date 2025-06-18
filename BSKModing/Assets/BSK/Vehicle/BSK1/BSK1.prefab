@@ -848,15 +848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a0cdd4b25a241044afb12e20819973a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputComponent:
-    gearlock: 0
-    steering: 0
-    acceleration: 0
-    braking: 0
-    handbrake: 0
-    clutch: 0
-    speed: 0
-    gearboxAcceleration: 0
   m_ConfigurationComponent:
     vehicleRoot: {fileID: 4204604565335486834}
     rigidBody: {fileID: 4204604565335486835}
@@ -873,29 +864,8 @@ MonoBehaviour:
       engineAcceleration: 0
   m_EngineConfigComponent:
     config: {fileID: 11400000, guid: 63d4ff8b281f5da49aaf5873d1f7b2bc, type: 2}
-    gearBoxRPM: 0
-    engineRPM: 0
-    engineTorque: 0
   m_GearboxComponent:
     config: {fileID: 11400000, guid: e85f3aba68897b040af68646241c1ad3, type: 2}
-    currentGear: 0
-    currentDriveMode: 0
-    engineTorque: 0
-    wheelRPM: 0
-    gearboxRPM: 0
-    gearboxTorque: 0
-  m_AMTGearbox:
-    targetDriveMode: 0
-    gearboxMode: 0
-    targetGear: 0
-    maxTargetGear: 0
-    clutch: 0
-    accelerationLimiter: 1
-    gearChangeDelay: 0.5
-    gearChangeWaitingTime: 0.5
-    gearChangeWaitingTimer: 0
-    gearChangeCoolOfTime: 1
-    gearChangeCoolOfTimer: 0
   m_WheelRenderss:
     wheelColliders:
     - {fileID: 4204604566350241370}
@@ -907,7 +877,6 @@ MonoBehaviour:
     - {fileID: 3623407787303231671}
     - {fileID: 4204604566300668200}
     - {fileID: 4204604565072597773}
-    enabled: 1
   m_Axles:
     axles:
     - wheelColliders:
@@ -924,8 +893,6 @@ MonoBehaviour:
       engine: 1
       handBrake: 1
       brake: 1
-    gearboxTorque: 0
-    wheelRPM: 0
   m_BalancingRad:
     rb: {fileID: 4204604565335486835}
     balancingRads:
@@ -955,10 +922,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed20aac43f53aeb4982e8a97043b0058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  driverLightInput:
-    headLightModes: 0
-    indicatroModes: 0
-    passLightModes: 0
   vehicleLightComponent:
     parkLight:
       isOn: 0
@@ -1542,7 +1505,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emitter: {fileID: 7888472617821309572}
-  toggleMode: 0
 --- !u!82 &7888472617821309572
 AudioSource:
   m_ObjectHideFlags: 0
