@@ -30,6 +30,10 @@ namespace BSK.Vehicles
         [SerializeField] WheelCollider subStepingWheelCollider;
         [SerializeField] int subSteping = 10;
 
+        private void Start()
+        {
+            rigidBody.centerOfMass = centerOfMassPos.localPosition;
+        }
 
     }
 
