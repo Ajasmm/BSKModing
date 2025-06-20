@@ -75,7 +75,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 065dfa6b6a682d5459c7a36133e60325, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -244,7 +244,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 1824f55b773c10b4c819d0ac63bb5f27, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -922,55 +922,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed20aac43f53aeb4982e8a97043b0058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  driverLightInput:
+    headLightModes: 0
+    indicatroModes: 0
+    passLightModes: 0
   vehicleLightComponent:
     parkLight:
       isOn: 0
-      lightMaterial: {fileID: 0}
+      lightMaterials: []
+      lightMonos: []
     brightLight:
       isOn: 0
-      lightMaterial: {fileID: 0}
+      lightMaterials: []
+      lightMonos: []
     dimLight:
       isOn: 0
-      lightMaterial: {fileID: 0}
+      lightMaterials: []
+      lightMonos: []
     leftIndicator:
       isOn: 0
-      lightMaterial: {fileID: 0}
+      lightMaterials: []
+      lightMonos: []
     rightIndicator:
       isOn: 0
-      lightMaterial: {fileID: 0}
+      lightMaterials: []
+      lightMonos: []
     hazardIndicator:
       isOn: 0
-      lightMaterial: {fileID: 0}
+      lightMaterials: []
+      lightMonos: []
     brakeLight:
       isOn: 0
-      lightMaterial: {fileID: 0}
+      lightMaterials: []
+      lightMonos: []
     reverceLight:
       isOn: 0
-      lightMaterial: {fileID: 0}
+      lightMaterials: []
+      lightMonos: []
   parkLights:
   - {fileID: 9000018571243837946}
   - {fileID: 7754543767430920802}
-  parkLightMaterial: {fileID: 2100000, guid: 1fd0e7ed3cc9ebf42a36ead7f6ac41f1, type: 2}
+  parkLightMaterial:
+  - {fileID: 2100000, guid: 1fd0e7ed3cc9ebf42a36ead7f6ac41f1, type: 2}
+  parkLightsComponent: []
   dimLights:
   - {fileID: 711791042136205151}
-  dimLightMaterial: {fileID: 2100000, guid: b35f622b0f65cfe41a646b2e5041f7ab, type: 2}
+  dimLightMaterial:
+  - {fileID: 2100000, guid: b35f622b0f65cfe41a646b2e5041f7ab, type: 2}
+  dimLightsComponent: []
   brightLights:
   - {fileID: 5573644170610224812}
-  brightLightMaterial: {fileID: 2100000, guid: 03b22b6de16d78d49883110f74876530, type: 2}
+  brightLightMaterial:
+  - {fileID: 2100000, guid: 03b22b6de16d78d49883110f74876530, type: 2}
+  brightLightsComponent: []
   leftIndicators:
   - {fileID: 8787187351059623055}
-  leftIndicatorMaterial: {fileID: 2100000, guid: e44c7148f2043314d82c8f455e63dc25, type: 2}
+  leftIndicatorMaterial:
+  - {fileID: 2100000, guid: e44c7148f2043314d82c8f455e63dc25, type: 2}
+  leftIndicatorsComponent: []
   rightIndicators:
   - {fileID: 3187153977271878826}
-  rightIndicatorMaterial: {fileID: 2100000, guid: 225ddc385c5bdce49b8ac18aa0a65ef0, type: 2}
+  rightIndicatorMaterial:
+  - {fileID: 2100000, guid: 225ddc385c5bdce49b8ac18aa0a65ef0, type: 2}
+  rightIndicatorsComponent: []
   hazardIndicators: []
-  hazardIndicatorMaterial: {fileID: 0}
+  hazardIndicatorMaterial:
+  - {fileID: 0}
+  hazardIndicatorsComponent: []
   brakeLights:
   - {fileID: 3227752338774899737}
-  brakeLightMaterial: {fileID: 2100000, guid: a1975a0c175c0514da7973aa95a26548, type: 2}
+  brakeLightMaterial:
+  - {fileID: 2100000, guid: a1975a0c175c0514da7973aa95a26548, type: 2}
+  brakeLightsComponent: []
   reverceLights:
   - {fileID: 1052502604468795740}
-  reverceLightMaterial: {fileID: 2100000, guid: 6a62f211dd9c7694b96018dab90f0a34, type: 2}
+  reverceLightMaterial:
+  - {fileID: 2100000, guid: 6a62f211dd9c7694b96018dab90f0a34, type: 2}
+  reverceLightsComponent: []
 --- !u!114 &6696742506113225836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2254,7 +2282,7 @@ PrefabInstance:
     - target: {fileID: 5891955072141302103, guid: f8f5e234de05a894ea4ff9ee472e8bf6, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1fd0e7ed3cc9ebf42a36ead7f6ac41f1, type: 2}
+      objectReference: {fileID: 2100000, guid: d14a980f6c99ee74ca212417aab35eec, type: 2}
     - target: {fileID: 5961390057497082318, guid: f8f5e234de05a894ea4ff9ee472e8bf6, type: 3}
       propertyPath: m_Layer
       value: 6
