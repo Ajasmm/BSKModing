@@ -7,8 +7,10 @@ namespace BSK.Vehicles
 
     [Serializable]
     public class VehicleLightInputComponent : IComponentData
-    { 
-        
+    {
+        public HeadLightModes headLightModes;
+        public IndicatorModes indicatroModes;
+        public ToggleModes passLightModes;
     }
 
     [Serializable]
@@ -30,6 +32,7 @@ namespace BSK.Vehicles
     public class VehicleLight
     {
         public bool isOn = false;
-        public Material lightMaterial;
+        public Material[] lightMaterials;
+        public MonoBehaviour[] lightMonos;
     }
 }
