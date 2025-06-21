@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4719657605711107714}
   - component: {fileID: 6507847022748648636}
   - component: {fileID: 6748533166568342916}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mirror_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 734840201787947784}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Center Of Mass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 3118495573043443177}
   - component: {fileID: 8103044802291986944}
   - component: {fileID: 3288735977482205236}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mirror_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,7 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4455037420832163038}
   - component: {fileID: 4204604565564908298}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1265,7 +1265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6857759596506867768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Door Entry Points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1330,7 +1330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5182201755943266632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rear Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1483,7 +1483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2434722692919966221}
   - component: {fileID: 5091512034304585881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mirrors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1679,7 +1679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4993971372149479419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Front Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1709,6 +1709,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4204604565335486834}
     m_Modifications:
+    - target: {fileID: 180794393392206067, guid: 8fec160c0dc62ed44adbee5a8c8b0a2b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628512981162386353, guid: 8fec160c0dc62ed44adbee5a8c8b0a2b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647442922241111287, guid: 8fec160c0dc62ed44adbee5a8c8b0a2b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941466346040608888, guid: 8fec160c0dc62ed44adbee5a8c8b0a2b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4363032699396140156, guid: 8fec160c0dc62ed44adbee5a8c8b0a2b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4380274459400600378, guid: 8fec160c0dc62ed44adbee5a8c8b0a2b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4678516861208665138, guid: 8fec160c0dc62ed44adbee5a8c8b0a2b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.759
@@ -1752,6 +1776,10 @@ PrefabInstance:
     - target: {fileID: 8330680955497659188, guid: 8fec160c0dc62ed44adbee5a8c8b0a2b, type: 3}
       propertyPath: m_Name
       value: Steering Wheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8330680955497659188, guid: 8fec160c0dc62ed44adbee5a8c8b0a2b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
