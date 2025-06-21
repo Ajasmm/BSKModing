@@ -29,7 +29,12 @@ namespace BSK.Vehicles
         [Header("Vehicle physics subSteping")]
         [SerializeField] WheelCollider subStepingWheelCollider;
         [SerializeField] int subSteping = 10;
-        
+
+        void Start()
+        {
+
+            rigidBody.centerOfMass = centerOfMassPos.localPosition;
+        }
     }
 
     
