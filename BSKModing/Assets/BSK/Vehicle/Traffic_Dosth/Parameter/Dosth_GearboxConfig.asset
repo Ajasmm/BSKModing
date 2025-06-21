@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2efd839bde7c814ca2dd92b13df5175, type: 3}
+  m_Name: Dosth_GearboxConfig
+  m_EditorClassIdentifier: 
+  finalRatio: 3
+  reverceGear: 3.5
+  ratios:
+  - ratio: 3.5
+    gearDownSpeed: 0
+    gearUpSpeed: 21.54235
+  - ratio: 2.5666666
+    gearDownSpeed: 19.583956
+    gearUpSpeed: 29.375933
+  - ratio: 1.882222
+    gearDownSpeed: 26.705395
+    gearUpSpeed: 40.058094
+  - ratio: 1.3802961
+    gearDownSpeed: 36.41645
+    gearUpSpeed: 54.624676
+  - ratio: 1.012217
+    gearDownSpeed: 49.6588
+    gearUpSpeed: 74.488205
+  wheelRadius_Editor: 0.4
+  gearUpRPM_Editor: 1500
+  gearDownRPM_Editor: 1000
+  targetRPMOnGearUP_Editor: 1100

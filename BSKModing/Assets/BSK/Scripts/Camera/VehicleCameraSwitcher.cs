@@ -17,5 +17,4 @@ public class VehicleCameraSwitcher : MonoBehaviour
     [SerializeField] CameraController[] cameraControllers;
     [SerializeField] int index360Cam = 3;
     int _currentCameraIndex = 0;
-
 }

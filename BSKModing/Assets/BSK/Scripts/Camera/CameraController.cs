@@ -14,14 +14,13 @@ public class CameraController : InputAxisControllerBase<CameraController.CameraA
     public bool invertZ;
     public float3 sencitivity = new float3(1000, 1000, 1);
 
-    
-
     [Serializable]
     public class CameraAxisReader : IInputAxisReader
     {
+
         public float GetValue(UnityEngine.Object context, IInputAxisOwner.AxisDescriptor.Hints hint)
         {
-            return 0;
+                return 0;
         }
     }
 }

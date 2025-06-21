@@ -13,6 +13,5 @@ namespace BSK.Vehicles
         [SerializeField] AudioMixer currentMixer;
         public EngineSoundComponent soundComponent;
 
-
     }
 }
