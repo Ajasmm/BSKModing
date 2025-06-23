@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.gamerchunkz.bundlebuilder": {
+      "version": "https://github.com/GamerChunkZ/bundlebuilder.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b023084627070b88a60fcfb55a1d1009109f3b4d"
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.7",
       "depth": 0,
