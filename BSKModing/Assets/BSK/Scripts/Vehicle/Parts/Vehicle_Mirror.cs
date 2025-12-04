@@ -14,4 +14,6 @@ public class Vehicle_Mirror : MonoBehaviour
     }
 
     [SerializeField] MirrorData[] mirrorDatas;
+
+    ToggleModes cameraOnState;
 }

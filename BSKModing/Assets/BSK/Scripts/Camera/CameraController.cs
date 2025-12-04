@@ -8,6 +8,13 @@ public class CameraController : InputAxisControllerBase<CameraController.CameraA
 {
     [SerializeField] CinemachineOrbitalFollow orbitalFlowView;
     [SerializeField] CinemachinePanTilt panTiltView;
+    [SerializeField] CinemachineFollow follow;
+
+    [Header("Pan Tilt Cam Z offset")]
+    [SerializeField] private bool enableMovement = false;
+    [SerializeField] private float minZOffset = 0;
+    [SerializeField] private float maxZOffset = 0;
+    [SerializeField] private float zCenter = 0;
 
     public bool invertX;
     public bool invertY;
@@ -17,10 +24,11 @@ public class CameraController : InputAxisControllerBase<CameraController.CameraA
     [Serializable]
     public class CameraAxisReader : IInputAxisReader
     {
+        CameraController controller;
 
         public float GetValue(UnityEngine.Object context, IInputAxisOwner.AxisDescriptor.Hints hint)
         {
-                return 0;
+            return 0;
         }
     }
 }

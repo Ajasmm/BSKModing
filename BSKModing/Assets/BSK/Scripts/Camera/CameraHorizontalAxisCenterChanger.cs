@@ -8,4 +8,5 @@ public class CameraHorizontalAxisCenterChanger : MonoBehaviour
     [SerializeField] CinemachineOrbitalFollow m_OrbitalFlow;
     [SerializeField] float forwardCenter;
     [SerializeField] float reverceCenter;
+
 }

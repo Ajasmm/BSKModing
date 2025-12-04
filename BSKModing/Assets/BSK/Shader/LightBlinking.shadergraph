@@ -285,7 +285,7 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "c8ca8088fa8b413ca2d7715ee9ebe30c"
+                    "m_Id": "137095d61739484aa727ac183f1e22f3"
                 },
                 "m_SlotId": 0
             }
@@ -3375,7 +3375,7 @@
         "greater than",
         "less than"
     ],
-    "m_Precision": 2,
+    "m_Precision": 1,
     "m_PreviewExpanded": true,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,

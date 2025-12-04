@@ -1,7 +1,7 @@
 using UnityEngine;
 
-public class ModVersion : MonoBehaviour
+[CreateAssetMenu(menuName ="Mods/Version", fileName ="versionAsset")]
+public class ModVersion : ScriptableObject
 {
-    [HideInInspector]
-    public int version = 1;
+    [SerializeField] public Version version = new Version("3.0.1");
 }
