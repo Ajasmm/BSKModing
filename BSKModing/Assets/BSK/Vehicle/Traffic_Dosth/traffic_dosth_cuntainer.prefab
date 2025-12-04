@@ -686,7 +686,7 @@ GameObject:
   - component: {fileID: 1965944556324460004}
   - component: {fileID: 3378811219443472214}
   - component: {fileID: -7139188754712168100}
-  - component: {fileID: 2089608144776491246}
+  - component: {fileID: -1102555236335644800}
   m_Layer: 8
   m_Name: traffic_dosth_cuntainer
   m_TagString: Traffic
@@ -766,15 +766,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a0cdd4b25a241044afb12e20819973a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InputComponent:
-    gearlock: 0
-    steering: 0
-    acceleration: 0
-    braking: 0
-    handbrake: 0
-    clutch: 0
-    speed: 0
-    gearboxAcceleration: 0
   m_ConfigurationComponent:
     vehicleRoot: {fileID: 8323033384720839151}
     rigidBody: {fileID: 5363149532241697787}
@@ -791,29 +782,8 @@ MonoBehaviour:
       engineAcceleration: 0
   m_EngineConfigComponent:
     config: {fileID: 11400000, guid: c4605b375ccfab241bae1c8a08d4043f, type: 2}
-    gearBoxRPM: 0
-    engineRPM: 0
-    engineTorque: 0
   m_GearboxComponent:
     config: {fileID: 11400000, guid: daad9940d023c2047aa30d45e6ba17d0, type: 2}
-    currentGear: 0
-    currentDriveMode: 0
-    engineTorque: 0
-    wheelRPM: 0
-    gearboxRPM: 0
-    gearboxTorque: 0
-  m_AMTGearbox:
-    targetDriveMode: 0
-    gearboxMode: 0
-    targetGear: 0
-    maxTargetGear: 0
-    clutch: 0
-    accelerationLimiter: 1
-    gearChangeDelay: 0.5
-    gearChangeWaitingTime: 0.5
-    gearChangeWaitingTimer: 0
-    gearChangeCoolOfTime: 1
-    gearChangeCoolOfTimer: 0
   m_WheelRenderss:
     wheelColliders:
     - {fileID: 5828126187033301845}
@@ -825,7 +795,6 @@ MonoBehaviour:
     - {fileID: 2790087508648972867}
     - {fileID: 6885040177434821912}
     - {fileID: 8107917728154056195}
-    enabled: 1
   m_Axles:
     axles:
     - wheelColliders:
@@ -842,8 +811,6 @@ MonoBehaviour:
       engine: 1
       handBrake: 1
       brake: 1
-    gearboxTorque: 0
-    wheelRPM: 0
   m_BalancingRad:
     rb: {fileID: 5363149532241697787}
     balancingRads:
@@ -873,6 +840,10 @@ MonoBehaviour:
     indicatroModes: 0
     passLightModes: 0
   vehicleLightComponent:
+    headLight:
+      headLight: {fileID: 0}
+      dimLightCookie: {fileID: 0}
+      brightLightCookie: {fileID: 0}
     parkLight:
       isOn: 0
       lightMaterials: []
@@ -917,44 +888,94 @@ MonoBehaviour:
   - {fileID: 3774083492273405058}
   parkLightMaterials:
   - {fileID: 2100000, guid: 7451257aa27ac1340bf116e0afd351f1, type: 2}
-  parkLightsComponent: []
-  parkLightObjects: []
+  OnParkLightOn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnParkLightOff:
+    m_PersistentCalls:
+      m_Calls: []
   dimLightMeshes: []
   dimLightMaterials: []
-  dimLightsComponent: []
-  dimLightObjects: []
+  OnDimLightOn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDimLightOff:
+    m_PersistentCalls:
+      m_Calls: []
   brightLightMeshes: []
   brightLightMaterials: []
-  brightLightsComponent: []
-  brightLightObjects: []
+  OnBrightLightOn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnBrightLightOff:
+    m_PersistentCalls:
+      m_Calls: []
   leftIndicatorMeshes:
   - {fileID: 4701950970025389580}
   leftIndicatorMaterials:
   - {fileID: 2100000, guid: 6b63e44014358e849b0bb68900156c75, type: 2}
-  leftIndicatorsComponent: []
-  leftIndicatorLightObjects: []
+  OnLeftIndicatorOn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnLeftIndicatorOff:
+    m_PersistentCalls:
+      m_Calls: []
   rightIndicatorMeshes:
   - {fileID: 3868694369940231364}
   rightIndicatorMaterials:
   - {fileID: 2100000, guid: 6b63e44014358e849b0bb68900156c75, type: 2}
-  rightIndicatorsComponent: []
-  rightIndicatorLightObjects: []
+  OnRightIndicatorOn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRightIndicatorOff:
+    m_PersistentCalls:
+      m_Calls: []
   hazardIndicatorMeshes: []
   hazardIndicatorMaterials: []
-  hazardIndicatorsComponent: []
-  hazardIndicatorLightObjects: []
+  OnHazardLightOn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnHazardLightOff:
+    m_PersistentCalls:
+      m_Calls: []
   brakeLightMeshes:
   - {fileID: 7227439999085074785}
   brakeLightMaterials:
   - {fileID: 2100000, guid: 7451257aa27ac1340bf116e0afd351f1, type: 2}
-  brakeLightsComponent: []
-  brakeLightObjects: []
+  OnBrakeLightOn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnBrakeLightOff:
+    m_PersistentCalls:
+      m_Calls: []
   reverceLightMeshes:
   - {fileID: 5052331034582866980}
   reverceLightMaterials:
   - {fileID: 2100000, guid: 7451257aa27ac1340bf116e0afd351f1, type: 2}
-  reverceLightsComponent: []
-  reverceLightObjects: []
+  OnReveceLightOn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReveceLightOff:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAdditionalLight1On:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAdditionalLight1Off:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAdditionalLight2On:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAdditionalLight2Off:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAdditionalLight3On:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAdditionalLight3Off:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1965944556324460004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1013,7 +1034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skinMaterials:
   - {fileID: 2100000, guid: 121336035585cce4984c52e9c557b6a0, type: 2}
---- !u!114 &2089608144776491246
+--- !u!114 &-1102555236335644800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1022,10 +1043,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6206351193255488444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4bee12f4ebe4ca40b689d3515351302, type: 3}
+  m_Script: {fileID: 11500000, guid: b5a16b301c7f63948b41fd5222d04b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 1
 --- !u!1 &6952676785993724324
 GameObject:
   m_ObjectHideFlags: 0
