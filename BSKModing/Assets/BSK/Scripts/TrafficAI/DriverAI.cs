@@ -15,5 +15,6 @@ namespace BSK.Traffic
         [SerializeField] private TrafficAIPathManagedComponent trafficAIPathManagedComponent;
         [SerializeField] private TrafficAITurnDecisionComponent trafficAITurnDecisionComponent;
         [SerializeField] private TrafficAISencorManagedComponent trafficAISencorManagedComponent;
+
     }
 }

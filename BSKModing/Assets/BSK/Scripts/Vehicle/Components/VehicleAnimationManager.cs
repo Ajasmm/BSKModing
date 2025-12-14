@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Rendering;
+using BSK.WeatherSystem;
 
 namespace BSK.Vehicles
 {

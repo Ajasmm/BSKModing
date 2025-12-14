@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6050517440965252297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc92aeda0c36f44b98e3ce0bae57fcda, type: 3}
+  m_Name: RainMaskRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  copyShader: {fileID: 4800000, guid: 381a7ac0c57b644d29bb7fcb0d0e805a, type: 3}
+  wiperMaskUpdateShader: {fileID: -6465566751694194690, guid: 60de16067f55148abb9436875566eb11, type: 3}
+--- !u!114 &-4414152152701860824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b16707dc0dd34f338a3f2785c899883, type: 3}
+  m_Name: RainLayerRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  passName: RainGlassRendering
+  renderPassEvent: 500
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 524288
+--- !u!114 &-3590370907601490289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e951dcfb6f174cd180d1411cb358ab6, type: 3}
+  m_Name: CustomNormalRendererFeature
+  m_EditorClassIdentifier: 
+  lightCookie: {fileID: 2800000, guid: 25321cc19229d054487ea20b9f5fc055, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24,18 +70,23 @@ MonoBehaviour:
     probeSamplingDebugMesh: {fileID: 0}
     probeSamplingDebugTexture: {fileID: 0}
     probeVolumeBlendStatesCS: {fileID: 0}
-  m_RendererFeatures: []
-  m_RendererFeatureMap: 
+  m_RendererFeatures:
+  - {fileID: -6050517440965252297}
+  - {fileID: 8113309462669602171}
+  - {fileID: -4414152152701860824}
+  - {fileID: 2355578628308627436}
+  - {fileID: 4939950350866882769}
+  m_RendererFeatureMap: 37ebf5c7713e08ac7bad3c5bf84398702804ae1901c8bdc2ec6fd63448b2b020d1a07ccfab3a8e44
   m_UseNativeRenderPass: 0
   xrSystemData: {fileID: 0}
-  postProcessData: {fileID: 0}
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   m_AssetVersion: 2
   m_OpaqueLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 13078519
   m_TransparentLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 13078519
   m_DefaultStencilState:
     overrideStencilState: 0
     stencilReference: 0
@@ -51,3 +102,53 @@ MonoBehaviour:
   m_DepthTextureFormat: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &2355578628308627436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1614fc811f8f184697d9bee70ab9fe5, type: 3}
+  m_Name: DecalRendererFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  m_Settings:
+    technique: 2
+    maxDrawDistance: 100
+    decalLayers: 0
+    dBufferSettings:
+      surfaceData: 0
+    screenSpaceSettings:
+      normalBlend: 0
+--- !u!114 &4939950350866882769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e5d176cbe90dd4b9985fd25d131fb0, type: 3}
+  m_Name: CustomLightingRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  lightCookie: {fileID: 2800000, guid: 25321cc19229d054487ea20b9f5fc055, type: 3}
+  pointLightTextureShader: {fileID: 4800000, guid: edf257fbf4bdb432b9ad74c744f7d5d9, type: 3}
+--- !u!114 &8113309462669602171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb71f026209477d43a35a996021843a8, type: 3}
+  m_Name: TransparentBlit
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  transparencyBlitShader: {fileID: 4800000, guid: f66d523bdb9b847b685615d47d92b4f8, type: 3}

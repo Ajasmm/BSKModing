@@ -17,7 +17,6 @@ namespace BSK.Vehicles
         [SerializeField] UnityEvent OnHornOn;
         [SerializeField] UnityEvent OnHornOff;
 
-        
 
         public enum HornType
         {

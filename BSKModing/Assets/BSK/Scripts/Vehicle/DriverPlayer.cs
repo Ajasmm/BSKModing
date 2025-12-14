@@ -22,4 +22,7 @@ public class DriverPlayer : MonoBehaviour
 
     [Header("Door entry point")]
     [SerializeField] public Transform[] doorsEntryPoint;
+
+
+    public static float speed;
 }

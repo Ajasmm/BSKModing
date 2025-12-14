@@ -163,7 +163,7 @@
         },
         "preventRotation": false
     },
-    "m_Path": "BSK",
+    "m_Path": "BSK/Rendering",
     "m_GraphPrecision": 1,
     "m_PreviewMode": 2,
     "m_OutputNode": {

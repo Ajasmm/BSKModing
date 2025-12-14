@@ -1,6 +1,8 @@
 using System;
+using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace BSK.Vehicles
 {
@@ -11,6 +13,10 @@ namespace BSK.Vehicles
         public HeadLightModes headLightModes;
         public IndicatorModes indicatroModes;
         public ToggleModes passLightModes;
+        
+        public ToggleModes additionalLight1;
+        public ToggleModes additionalLight2;
+        public ToggleModes additionalLight3;
     }
 
     [Serializable]
@@ -29,21 +35,23 @@ namespace BSK.Vehicles
 
         public VehicleLight brakeLight;
         public VehicleLight reverceLight;
+
+        public VehicleLight additionalLight1;
+        public VehicleLight additionalLight2;
+        public VehicleLight additionalLight3;
     }
 
     [Serializable]
     public class VehicleLight
     {
         public bool isOn = false;
-        public Material[] lightMaterials;
-        public MonoBehaviour[] lightMonos;
-        public GameObject[] lightObjects;
+        public List<Material> lightMaterials;
+        public UnityEvent OnEvent;
+        public UnityEvent OffEvent;
     }
     [Serializable]
     public class VehicleHeadLight
     {
-        public Light headLight;
-        public Texture2D dimLightCookie;
-        public Texture2D brightLightCookie;
+        public CustomVehicleHeadLight headLight;
     }
 }

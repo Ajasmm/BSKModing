@@ -21,13 +21,17 @@ public class CameraController : InputAxisControllerBase<CameraController.CameraA
     public bool invertZ;
     public float3 sencitivity = new float3(1000, 1000, 1);
 
+    public CameraTouchPad touchPad;
+
     [Serializable]
     public class CameraAxisReader : IInputAxisReader
     {
         CameraController controller;
+        CameraTouchPad touchPad;
 
         public float GetValue(UnityEngine.Object context, IInputAxisOwner.AxisDescriptor.Hints hint)
         {
+            
             return 0;
         }
     }
