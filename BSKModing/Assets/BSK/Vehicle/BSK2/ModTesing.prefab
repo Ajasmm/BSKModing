@@ -1082,7 +1082,7 @@ GameObject:
   - component: {fileID: 6843656844044829159}
   - component: {fileID: 9151931247752916008}
   m_Layer: 6
-  m_Name: BSK2
+  m_Name: ModTesing
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
