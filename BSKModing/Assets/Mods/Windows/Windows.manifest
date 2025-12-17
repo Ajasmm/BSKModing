@@ -1,9 +1,0 @@
-ManifestFileVersion: 0
-UnityVersion: 6000.0.61f1
-CRC: 947576144
-HashAppended: 0
-AssetBundleManifest:
-  AssetBundleInfos:
-    Info_0:
-      Name: modtesting
-      Dependencies: {}
